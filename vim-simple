@@ -1,0 +1,31 @@
+set autoindent  
+set tabstop=4
+set shiftwidth=4 "设定 << 和 >> 命令移动时的宽度为 4
+set softtabstop=4 "使得按退格键时可以一次删掉 4 个空格
+set number
+set smarttab
+set expandtab "使用空格替换tab
+set smartindent "自动与上行缩进模式一样
+set history=1000  " 历史记录数
+set showcmd " 在命令行显示当前输入的命令
+set fileencoding=utf-8 "设置多编码处理
+set cursorline "突出显示当前行
+set mouse=a "鼠标接管了所有控制
+syntax on " 允许按指定主题进行语法高亮，而非默认高亮主题
+syntax enable   " 打开语法高亮
+
+"搜索时高亮显示被找到的文本
+set hlsearch 
+set incsearch
+"语言设置
+set langmenu=zh_CN.UTF-8
+set helplang=cn
+" 总是显示状态行
+set cmdheight=2
+"自动补全括号
+inoremap ( ()<ESC>i
+inoremap [ []<ESC>i
+inoremap { {}<ESC>i
+inoremap < <><ESC>i
+inoremap ' ''<ESC>i
+inoremap " ""<ESC>i
